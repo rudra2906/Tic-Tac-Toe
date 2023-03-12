@@ -1,0 +1,100 @@
+*,*::after,*::before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font  */
+    font-family: 'Poppins', sans-serif;
+}
+
+#wrapper
+{
+    background-color: rgb(42, 201, 201);
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.current-player
+{
+    position: absolute;
+    top:3rem;
+    left:50%;
+    background-color: rgba(255, 255, 255, 0.274);
+    border-radius: 1rem;
+    padding: 0.5rem 3rem;
+    transform:translateX(-50%);
+    outline: 1px solid rgba(255, 255, 255, 0.664);
+    text-align: center;
+
+}
+
+.tic-tac-toe
+{
+    aspect-ratio: 1/1;
+    width: 90%;
+    max-width: 20rem;
+    padding: 2rem;  
+    background-color: rgba(255, 255, 255, 0.274);
+    border-radius: 1rem;
+    outline: 1px solid rgba(255, 255, 255, 0.664);
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr );
+    
+}
+
+.box
+{
+    color: rgba(0, 0, 0, 0.733);
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+}
+
+.box1,.box2,.box4,.box5
+{
+    border-bottom: 2px solid white;
+    border-right: 2px solid white ;
+}
+.box3,.box6
+{
+    border-bottom: 2px solid white;
+}
+.box7,.box8{
+    border-right: 2px solid white;
+}
+
+.btn
+{
+    all: unset;
+    position: absolute;
+    bottom:3rem;
+    left:50%;
+    transform:translateX(-50%);
+    display: none;
+    margin-bottom: 100px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.274);
+    border-radius: 1rem;
+    padding: 0.5rem 3rem;
+    outline: 1px solid rgba(255, 255, 255, 0.664);
+    text-align: center;
+}
+
+.btn.active
+{
+    display: flex;
+}
+
+.win
+{
+    background-color: rgba(0,255,0,0.3);
+}
